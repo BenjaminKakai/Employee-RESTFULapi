@@ -57,5 +57,13 @@ The @DeleteMapping endpoint (/employees/{id}) deletes an employee by ID from the
 Ultimately, this project is a basic RESTful web service that uses Spring Boot. It manages a list of employees, supporting operations to get the list of employees, add a new employee, and delete an existing employee.
 
 
+how to add an employee to the list; 
+
+curl -X POST -H "Content-Type: application/json" -d '{"firstName": "John", "lastName": "Doe", "email": "john.doe@example.com"}' http://localhost:8080/employees
+
+
+how to delete an employee from the list; 
+
+curl -X DELETE http://localhost:8080/employees/1
 
 
